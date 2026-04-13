@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login – Homework Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 min-h-screen flex items-center justify-center p-4 font-sans">
+    <div class="w-full max-w-md">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-black text-indigo-600 tracking-tight">MY TASKS 🚀</h1>
+            <p class="text-slate-500 mt-1 font-medium">Sign in to your account</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/60 border border-slate-100">
+            {% if error %}
+            <div class="bg-red-50 border border-red-200 text-red-600 text-sm font-semibold px-4 py-3 rounded-2xl mb-6">
+                {{ error }}
+            </div>
+            {% endif %}
+
+            <form method="post" class="space-y-4">
+                {% csrf_token %}
+                <div>
+                    <label class="block text-xs font-black uppercase text-slate-500 mb-2 tracking-wider">Username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        required
+                        autocomplete="username"
+                        class="w-full p-4 bg-slate-50 rounded-2xl outline-none focus:ring-2 focus:ring-indigo-400 font-medium text-slate-800"
+                        placeholder="your username"
+                    >
+                </div>
+                <div>
+                    <label class="block text-xs font-black uppercase text-slate-500 mb-2 tracking-wider">Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        required
+                        autocomplete="current-password"
+                        class="w-full p-4 bg-slate-50 rounded-2xl outline-none focus:ring-2 focus:ring-indigo-400 font-medium text-slate-800"
+                        placeholder="••••••••"
+                    >
+                </div>
+                <button
+                    type="submit"
+                    class="w-full bg-indigo-600 text-white py-4 rounded-2xl font-black text-lg hover:bg-indigo-700 transition shadow-lg shadow-indigo-200 active:scale-95 mt-2"
+                >
+                    Sign In
+                </button>
+            </form>
+
+            <p class="text-center text-slate-500 text-sm mt-6">
+                No account yet?
+                <a href="{% url 'register' %}" class="text-indigo-600 font-bold hover:underline">Create one</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
