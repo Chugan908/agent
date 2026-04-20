@@ -4,18 +4,15 @@
 
 ## Projekta apraksts
 
-Homework Tracker ir tīmekļa lietotne mājas darbu un uzdevumu pārvaldībai. Katrs lietotājs var reģistrēties, pieteikties savā kontā un pārvaldīt savus uzdevumus — tie tiek saglabāti datubāzē un ir pieejami pat pēc pārlūkprogrammas aizvēršanas.
+Homework Tracker ir tīmekļa lietotne mājas darbu un uzdevumu pārvaldībai. Katrs lietotājs var reģistrēties, pieteikties savā kontā un pārvaldīt savus uzdevumus, tie tiek saglabāti datubāzē un ir pieejami pat pēc pārlūkprogrammas aizvēršanas.
 
-Lietotājs var pievienot uzdevumus ar priekšmetu, izpildes datumu un steidzamības statusu, atzīmēt tos kā paveiktus, rediģēt vai dzēst. Katrs lietotājs redz tikai savus uzdevumus — citu lietotāju dati nav pieejami.
+Lietotājs var pievienot uzdevumus ar priekšmetu, izpildes datumu un steidzamības statusu, atzīmēt tos kā paveiktus, rediģēt vai dzēst. Katrs lietotājs redz tikai savus uzdevumus, citu lietotāju dati nav pieejami.
 
 
 ### Izmantošanas paraugs
 
-```
-
 https://github.com/user-attachments/assets/76bcb388-f674-4756-be2d-9b2b322760d5
 
-```
 ---
 
 ### Projekta struktūra
@@ -24,21 +21,21 @@ https://github.com/user-attachments/assets/76bcb388-f674-4756-be2d-9b2b322760d5
 homework_tracker/
 ├── manage.py
 ├── requirements.txt
-├── db.sqlite3                  ← datubāze (tiek izveidota automātiski)
-├── homework_tracker/           ← Django projekta konfigurācija
+├── db.sqlite3                 
+├── homework_tracker/           
 │   ├── settings.py
 │   └── urls.py
-├── tasks/                      ← galvenā lietotnes daļa
-│   ├── models.py               ← Task un User modeļi
-│   ├── views.py                ← autentifikācija + JSON API
+├── tasks/                      
+│   ├── models.py              
+│   ├── views.py                
 │   ├── urls.py
-│   └── tests.py                ← funkcionālie testi
+│   └── tests.py                
 ├── templates/
-│   ├── index.html              ← galvenais skats (pieprasa pieteikšanos)
+│   ├── index.html             
 │   ├── login.html
 │   └── register.html
 └── static/
-    └── script.js               ← frontend loģika (fetch API)
+    └── script.js               
 ```
 
 ---
@@ -51,8 +48,7 @@ homework_tracker/
 | Django | 4.2 | Backend tīmekļa ietvars |
 | SQLite | iebūvēts | Datubāze lietotāju un uzdevumu glabāšanai |
 | HTML / CSS | — | Lietotāja saskarne |
-| JavaScript (Vanilla) | — | Dinamiskas darbības pārlūkprogrammā (fetch API) |
-| Tailwind CSS | CDN | Vizuālais stils |
+| JavaScript | — | Dinamiskas darbības pārlūkprogrammā |
 
 **Django iebūvētās komponentes:**
 - `django.contrib.auth` — lietotāju autentifikācija un sesijas
