@@ -6,11 +6,17 @@
 
 Homework Tracker ir tīmekļa lietotne mājas darbu un uzdevumu pārvaldībai. Katrs lietotājs var reģistrēties, pieteikties savā kontā un pārvaldīt savus uzdevumus — tie tiek saglabāti datubāzē un ir pieejami pat pēc pārlūkprogrammas aizvēršanas.
 
-Lietotājs var pievienot uzdevumus ar priekšmetu, izpildes datumu un steidzamības s
+Lietotājs var pievienot uzdevumus ar priekšmetu, izpildes datumu un steidzamības statusu, atzīmēt tos kā paveiktus, rediģēt vai dzēst. Katrs lietotājs redz tikai savus uzdevumus — citu lietotāju dati nav pieejami.
+
+
+### Izmantošanas paraugs
+
+```
 
 https://github.com/user-attachments/assets/76bcb388-f674-4756-be2d-9b2b322760d5
 
-tatusu, atzīmēt tos kā paveiktus, rediģēt vai dzēst. Katrs lietotājs redz tikai savus uzdevumus — citu lietotāju dati nav pieejami.
+```
+---
 
 ### Projekta struktūra
 
