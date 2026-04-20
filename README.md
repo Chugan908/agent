@@ -50,11 +50,6 @@ homework_tracker/
 | HTML / CSS | — | Lietotāja saskarne |
 | JavaScript | — | Dinamiskas darbības pārlūkprogrammā |
 
-**Django iebūvētās komponentes:**
-- `django.contrib.auth` — lietotāju autentifikācija un sesijas
-- `AbstractUser` — paplašināms lietotāja modelis
-- `django.test` — funkcionālo testu ietvars
-
 ---
 
 ## Palaišanas instrukcija
@@ -111,7 +106,7 @@ python manage.py test tasks -v 2
 ### Reģistrācija un pieteikšanās
 
 1. Atverot lietotni pirmo reizi, tiek parādīta pieteikšanās lapa (`/login/`)
-2. Ja konta vēl nav — noklikšķini uz **"Create one"**, lai atvērtu reģistrācijas lapu (`/register/`)
+2. Ja konta vēl nav, noklikšķini uz **"Create one"**, lai atvērtu reģistrācijas lapu (`/register/`)
 3. Ievadi lietotājvārdu un paroli (vismaz 6 simboli), apstipriniet paroli un noklikšķini **"Create Account"**
 4. Pēc reģistrācijas esi automātiski pieteikts un nonāc galvenajā skatā
 5. Lai atteiktos, noklikšķini pogu **"Logout"** augšējā labajā stūrī
@@ -122,20 +117,20 @@ python manage.py test tasks -v 2
 1. Ievadi uzdevuma nosaukumu laukā *"What needs to be done?"*
 2. Izvēlies priekšmetu no saraksta (Math, Science, English, History, Art, Other)
 3. Pēc izvēles norādi izpildes datumu
-4. Ja uzdevums ir steidzams — atzīmē izvēles rūtiņu **URGENT** (uzdevums tiks iezīmēts sarkanā rāmī)
+4. Ja uzdevums ir steidzams, atzīmē izvēles rūtiņu **URGENT** (uzdevums tiks iezīmēts sarkanā rāmī)
 5. Noklikšķini **ADD** vai nospied **Enter**
 
 **Uzdevuma atzīmēšana kā pabeigtu:**
-- Noklikšķini uz apļa pogas uzdevuma kreisajā pusē — uzdevums tiks nosvītrots
+- Noklikšķini uz apļa pogas uzdevuma kreisajā pusē, uzdevums tiks nosvītrots
 
 **Uzdevuma rediģēšana:**
-- Uzvedi peli uz uzdevuma un noklikšķini ikonu 📝 — parādīsies logs, kurā var mainīt nosaukumu
+- Uzvedi peli uz uzdevuma un noklikšķini ikonu 📝, parādīsies logs, kurā var mainīt nosaukumu
 
 **Uzdevuma dzēšana:**
 - Uzvedi peli uz uzdevuma un noklikšķini ikonu 🗑️
 
 **Pabeigto uzdevumu notīrīšana:**
-- Noklikšķini pogu **"Clear Done"** augšējā labajā stūrī — visi pabeigtie uzdevumi tiks dzēsti vienlaicīgi
+- Noklikšķini pogu **"Clear Done"** augšējā labajā stūrī, visi pabeigtie uzdevumi tiks dzēsti vienlaicīgi
 
 ### Filtrēšana
 
