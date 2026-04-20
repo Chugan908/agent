@@ -55,7 +55,7 @@ DATABASES = {
     }
 }
 
-AUTH_PASSWORD_VALIDATORS = []  # Relaxed for development
+AUTH_PASSWORD_VALIDATORS = [] 
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
@@ -68,3 +68,5 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = '/login/'
+
+AUTH_USER_MODEL = 'tasks.User'
